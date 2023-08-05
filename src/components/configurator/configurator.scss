@@ -1,0 +1,28 @@
+@import '/utilities/index.scss';
+
+.config {
+	background-color: $blue-main;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+
+	&__title {
+		position: absolute;
+		top: 20px;
+		font-size: 40px;
+		color: $white-main;
+	}
+
+	&__card {
+		background-color: $white-main;
+		width: 654px;
+		height: 560px;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}

@@ -1,0 +1,74 @@
+@import '/utilities/';
+
+.playerTab__turn {
+	width: 255px;
+	height: 72px;
+	padding: 21px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $orange-main;
+	border-radius: 12px;
+	position: relative;
+
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		color: $white-main;
+	}
+
+	&__points {
+		color: $white-main;
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		transform: rotate(45deg);
+		right: 118px;
+		top: -8px;
+		background-color: $orange-main;
+	}
+
+	&::after {
+		content: 'CURRENT PLAYER';
+		position: absolute;
+		top: 100px;
+		left: 35px;
+		width: 180px;
+
+		font-size: 13px;
+		letter-spacing: 5px;
+		font-weight: bold;
+		color: $blue-dark;
+	}
+}
+
+.playerTab{
+
+	width: 255px;
+	height: 72px;
+	padding: 21px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $grey-light;
+	border-radius: 12px;
+	position: relative;
+
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		color: $grey-dark;
+	}
+
+	&__points {
+		color: $blue-dark;
+		font-size: 32px;
+		font-weight: bold;
+	}
+}

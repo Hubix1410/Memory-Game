@@ -1,0 +1,16 @@
+@import '/utilities/';
+
+.backToken {
+	border-radius: 50%;
+	background-color: $blue-main;
+
+	&--4x4 {
+		width: 118px;
+		height: 118px;
+	}
+
+	&--6x6 {
+		width: 82px;
+		height: 82px;
+	}
+}

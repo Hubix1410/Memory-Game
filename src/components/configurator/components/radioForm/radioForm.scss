@@ -1,0 +1,57 @@
+@import '/utilities/';
+
+.radio {
+	height: 93px;
+	width: 541px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 20px;
+		width: 100%;
+		text-align: left;
+		color: $grey-dark;
+		margin: 0;
+	}
+
+	&__button {
+		font-size: 26px;
+		outline: none;
+		border: none;
+		border-radius: 26px;
+		color: $white-main;
+
+		&--2 {
+			height: 52px;
+			width: 256px;
+		}
+
+		&--4 {
+			height: 52px;
+			width: 119px;
+		}
+
+		&--active {
+			background-color: $blue-main;
+		}
+
+		&--inactive {
+			background-color: $grey-dark;
+
+			&:hover {
+				cursor: pointer;
+				background-color: $grey-main;
+				transition-duration: 0.2s;
+			}
+		}
+	}
+}

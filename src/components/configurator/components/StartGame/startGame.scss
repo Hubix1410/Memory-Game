@@ -1,0 +1,21 @@
+@import '/utilities/';
+
+.startGame {
+	width: 541px;
+	height: 70px;
+	background-color: $orange-main;
+
+	outline: none;
+	border: 0;
+
+	font-size: 32px;
+	color: $white-main;
+
+	border-radius: 35px;
+
+	&:hover {
+		background-color: $orange-main-hover;
+		cursor: pointer;
+		transition-duration: 0.2s;
+	}
+}

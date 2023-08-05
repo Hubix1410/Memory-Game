@@ -1,0 +1,123 @@
+@import '/utilities/';
+
+.gameSummary {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+
+	&__container {
+		padding: 51px 56px;
+		border-radius: 20px;
+		background-color: $white-main;
+		width: 654px;
+        height: 702px;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__player {
+		width: 542px;
+		height: 72px;
+		padding: 0 25px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-radius: 18px;
+
+		&--isWinner {
+			background-color: $blue-dark;
+
+			& > .gameSummary__player__name {
+                font-size: 18px;
+                color: $white-main;
+                font-weight: 700;
+			}
+
+            & > .gameSummary__player__points {
+                font-size: 32px;
+                font-weight: 700;
+                color: $white-main;
+            }
+		}
+
+		&--isLosser {
+			background-color: $grey-light;
+
+			& > .gameSummary__player__name {
+                font-size: 18px;
+                color: $grey-dark;
+                font-weight: 700;
+			}
+
+            & > .gameSummary__player__points {
+                font-size: 32px;
+                font-weight: 700;
+                color: $grey-dark;
+            }
+		}
+	}
+
+	&__title {
+		color: $blue-dark;
+		font-size: 48px;
+		font-weight: 700;
+        margin: 0;
+	}
+
+	&__subtitle {
+		color: $grey-dark;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__button__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__button {
+		width: 264px;
+		height: 52px;
+		outline: none;
+		border: none;
+		border-radius: 20px;
+		font-weight: 700;
+		font-size: 20px;
+
+		&--new_game {
+			color: $blue-main;
+			background-color: $grey-light;
+
+			&:hover {
+				background-color: $grey-main;
+				cursor: pointer;
+				transition-duration: 0.2s;
+			}
+		}
+
+		&--restart {
+			color: $white-main;
+			background-color: $orange-main;
+
+			&:hover {
+				background-color: $orange-main-hover;
+				cursor: pointer;
+				transition-duration: 0.2s;
+			}
+		}
+	}
+}

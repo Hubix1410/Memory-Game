@@ -1,0 +1,29 @@
+@import '/utilities/';
+
+.frontToken {
+	border-radius: 50%;
+	font-size: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&--4x4 {
+		width: 118px;
+		height: 118px;
+	}
+
+	&--6x6 {
+		width: 82px;
+		height: 82px;
+	}
+
+    &--matching{
+        color: $white-main;
+        background-color: $orange-main;
+    }
+
+    &--visible{
+        color: $white-main;
+        background-color: $grey-main;
+    }
+}
